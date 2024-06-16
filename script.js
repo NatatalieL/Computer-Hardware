@@ -9,7 +9,6 @@ function submitQuiz() {
         answers.push(select.value);
     });
 
-
     let score = 0;
     for (let i = 0; i < answers.length; i++) {
         if (answers[i] === correctAnswers[i]) {
@@ -20,5 +19,5 @@ function submitQuiz() {
 
     // Calculate score (for demo, let's just display the answers)
     alert("Answers: " + answers.join(", "));
-    alert("Your score: " + score + "/" + correctAnswers.length);
+    alert(`Your score: ${score}/19`);
 }
