@@ -1,7 +1,7 @@
 function submitQuiz() {
     // Collect user answers
     let answers = [];
-    let correctAnswers = ["a", "c", "b", "a", "d", "c", "c", "b", "d", "false", "true", "true", "false", "true", "true", "false", "true", "true", "false"];
+    let correctAnswers = ["a", "c", "b", "a", "d", "c", "c", "b", "false", "true", "true", "false", "true", "true", "false", "true", "true", "false"];
     document.querySelectorAll('input[type="radio"]:checked').forEach(input => {
         answers.push(input.value);
     });
